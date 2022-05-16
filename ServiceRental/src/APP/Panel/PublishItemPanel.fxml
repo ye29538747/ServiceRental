@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.PublishItemController">
+   <children>
+      <Text layoutX="254.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="发布项目">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="135.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="项目名称" />
+      <Text layoutX="135.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="开始时间" />
+      <Text layoutX="135.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="结束时间" />
+      <TextField fx:id="name" layoutX="200.0" layoutY="138.0" />
+      <TextField fx:id="beginTime" layoutX="200.0" layoutY="169.0" />
+      <TextField fx:id="endTime" layoutX="200.0" layoutY="201.0" />
+      <Text layoutX="147.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="内容" />
+      <TextArea fx:id="message" layoutX="200.0" layoutY="243.0" prefHeight="130.0" prefWidth="372.0" />
+      <Button layoutX="23.0" layoutY="46.0" mnemonicParsing="false" onAction="#ReturnButtonClick" text="返回" />
+      <Button layoutX="329.0" layoutY="434.0" mnemonicParsing="false" onAction="#EnterButtonClick" text="确认发布" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPanel" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.LoginController">
+   <children>
+      <Button id="loginButton" layoutX="232.0" layoutY="245.0" mnemonicParsing="false" onAction="#LoginButtonClick" text="登录" />
+      <Text layoutX="187.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号" />
+      <Text layoutX="187.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" />
+      <Text layoutX="179.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="服务租凭系统" wrappingWidth="268.240234375">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameTextfield" layoutX="232.0" layoutY="148.0" />
+      <TextField fx:id="passwordTextfield" layoutX="232.0" layoutY="181.0" />
+      <Button id="registerButton" layoutX="353.0" layoutY="245.0" mnemonicParsing="false" onAction="#RegisterButtonClick" text="注册" />
+   </children>
+</AnchorPane>

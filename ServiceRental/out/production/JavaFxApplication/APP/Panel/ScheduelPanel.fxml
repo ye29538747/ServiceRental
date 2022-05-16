@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.ScheduelController">
+   <children>
+      <Text layoutX="278.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="时间表">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="98.0" layoutY="98.0" prefHeight="340.0" prefWidth="445.0">
+        <columns>
+            <TableColumn fx:id="beginTime" prefWidth="118.0" text="开始时间" />
+            <TableColumn fx:id="endTime" prefWidth="106.0" text="结束时间" />
+          <TableColumn fx:id="item_no" minWidth="8.0" prefWidth="96.0" text="项目编号" />
+          <TableColumn fx:id="item_name" prefWidth="90.0" text="项目名字" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#ReturnButtonClick" text="返回" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.RegisterController">
+   <children>
+      <Text layoutX="259.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="注      册">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="194.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="194.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="259.0" layoutY="148.0" />
+      <TextField fx:id="password" layoutX="259.0" layoutY="188.0" />
+      <Text layoutX="158.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="重复密码">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="repassword" layoutX="259.0" layoutY="226.0" />
+      <Button layoutX="320.0" layoutY="296.0" mnemonicParsing="false" onAction="#RegisterButtonClick" text="确认" />
+      <Button layoutX="32.0" layoutY="30.0" mnemonicParsing="false" onAction="#Return" text="返回 " />
+      <Text fx:id="repeat_check" fill="RED" layoutX="449.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="104.240234375" />
+      <Text fx:id="name_check" fill="RED" layoutX="449.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="104.240234375" />
+      <Text fx:id="password_check" fill="RED" layoutX="449.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="104.240234375" />
+   </children>
+</AnchorPane>

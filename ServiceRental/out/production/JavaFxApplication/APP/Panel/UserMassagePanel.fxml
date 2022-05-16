@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.UserMassageController">
+   <children>
+      <Text layoutX="254.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户信息">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="266.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="254.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户密码">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="name" layoutX="353.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="password" layoutX="353.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="29.0" layoutY="52.0" mnemonicParsing="false" onAction="#ReturnButton" prefHeight="34.0" prefWidth="72.0" text="返回" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.ContractChargeController">
+    <children>
+        <Text layoutX="254.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="合同管理">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Text>
+        <ScrollPane layoutX="39.0" layoutY="118.0" prefHeight="315.0" prefWidth="622.0">
+            <content>
+                <TableView fx:id="tableView" prefHeight="315.0" prefWidth="620.0">
+                    <columns>
+                        <TableColumn fx:id="no" prefWidth="109.0" text="编号" />
+                        <TableColumn fx:id="time" prefWidth="106.0" text="时间" />
+                        <TableColumn fx:id="first" minWidth="0.0" prefWidth="120.0" text="甲方" />
+                        <TableColumn fx:id="second" prefWidth="120.0" text="乙方" />
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

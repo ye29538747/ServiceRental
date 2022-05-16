@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.ApplyListController">
+   <children>
+      <ScrollPane layoutX="65.0" layoutY="141.0" prefHeight="298.0" prefWidth="572.0">
+         <content>
+            <TableView prefHeight="281.0" prefWidth="569.0">
+              <columns>
+                <TableColumn prefWidth="125.0" text="名字" />
+                  <TableColumn prefWidth="84.0" text="性别" />
+                  <TableColumn prefWidth="85.0" text="年龄" />
+                <TableColumn minWidth="0.0" prefWidth="143.0" text="电话" />
+                  <TableColumn prefWidth="131.0" text="自我介绍" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Text layoutX="255.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="申请信息">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Button layoutX="319.0" layoutY="454.0" mnemonicParsing="false" onAction="#EnterButton" text="确认申请" />
+   </children>
+</AnchorPane>

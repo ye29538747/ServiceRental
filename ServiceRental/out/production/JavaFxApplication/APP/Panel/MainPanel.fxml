@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.MainController">
+   <children>
+      <Accordion layoutX="14.0" layoutY="96.0" prefHeight="244.0" prefWidth="134.0">
+         <panes>
+          <TitledPane animated="false" prefHeight="80.0" prefWidth="134.0" text="用户">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#UserMassage" prefHeight="23.0" prefWidth="112.0" text="用户信息" />
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+          <TitledPane animated="false" prefHeight="24.0" prefWidth="166.0" text="自由职业者">
+               <content>
+                  <VBox prefHeight="111.0" prefWidth="132.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#EmployeeMassageButton" prefHeight="23.0" prefWidth="124.0" text="职业信息" />
+                        <Button mnemonicParsing="false" onAction="#EmployeeSchduleButton" prefHeight="23.0" prefWidth="119.0" text="时间表" />
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+            <TitledPane prefHeight="105.0" prefWidth="134.0" text="客户">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#CustomerMassageButton" prefHeight="23.0" prefWidth="113.0" text="客户信息" />
+                        <Button mnemonicParsing="false" onAction="#CustomerItemButton" prefHeight="23.0" prefWidth="136.0" text="项目管理" />
+                        <Button mnemonicParsing="false" onAction="#CustomerPublishItem" prefHeight="23.0" prefWidth="124.0" text="发布项目" />
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+         </panes>
+      </Accordion>
+      <Text layoutX="331.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="搜     索">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textField" layoutX="305.0" layoutY="155.0" prefHeight="23.0" prefWidth="249.0" />
+      <Button layoutX="590.0" layoutY="155.0" mnemonicParsing="false" onAction="#SearchButton" text="搜索" />
+   </children>
+</AnchorPane>

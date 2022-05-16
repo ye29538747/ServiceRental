@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Panel.ApplyItemController">
+    <children>
+        <Text layoutX="254.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="项目信息">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Text>
+        <Text layoutX="63.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="项目名称" />
+        <Text layoutX="63.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="开始时间" />
+        <Text layoutX="63.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="结束时间" />
+        <TextField fx:id="name" layoutX="128.0" layoutY="134.0" />
+        <TextField fx:id="beginTime" layoutX="128.0" layoutY="165.0" />
+        <TextField fx:id="endTime" layoutX="128.0" layoutY="197.0" />
+        <Text layoutX="75.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="内容" />
+        <TextArea fx:id="message" layoutX="128.0" layoutY="270.0" prefHeight="130.0" prefWidth="372.0" />
+        <Button layoutX="257.0" layoutY="432.0" mnemonicParsing="false" onAction="#ApplyItem" text="确认申请" />
+        <Text layoutX="75.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="状态" />
+        <TextField fx:id="state" layoutX="128.0" layoutY="231.0" />
+    </children>
+</AnchorPane>
